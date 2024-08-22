@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    
+    <header class="header">
+        <img class="presentacion__imagen" src="./Imgs/alura.svg" alt="Imagen del logo de Alura LATAM">
+    </header>
+
+    <main class="encriptador">
+    
+        <div class="encriptador__contenido">
+            
+            <div>
+                <input type="text" id="texto__inicial" placeholder="Ingrese el texto aquí" class="encriptador__input">
+                
+                <div class="encriptador__mensaje">
+                    <img class="encriptador__imagen" src="./Imgs/exclamacion.png" alt="Imagen signo de admiración">
+                    <p class="encriptador__frase">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="encriptador__botones">   
+                    <button onclick="encriptar();" class="encriptador__boton1">Encriptar</button>
+                    <button onclick="desencriptar();" class="encriptador__boton2">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="texto__final">
+                <img id= "img" class="texto__final__imagen" src="./Imgs/encriptar_1.jpg" alt="Imagen encriptador"> 
+                <p id="mensaje1" class="texto__final__mensaje1"> Ningún mensaje fue encontrado</p>
+                <p id="mensaje2" class="texto__final__mensaje2"> Ingresa el texto que desees encriptar o desencriptar.</p>  
+                
+                <p id="texto__final" class="texto__final__p"></p>
+                <button onclick = "copiar();" class="encriptador__boton3"> Copiar </button>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Tania Lorena Amórtegui Álvarez</p>
+        <p>Agosto 2024</p>
+    </footer>
+
+    <script src="funciones_proyecto.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root{
+    --color-1: #BDE8CA;
+    --color-2: #41B3A2;
+    --color-3: #0D7C66;
+    --color-4: #F6F6F6;
+    --color-hover: #D7C3F1;
+
+    --fuente-Inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: var(--color-1);
+    color: var(--color-2);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 10%;
+}
+
+.presentacion__imagen{
+    width: 3%;
+}
+
+.encriptador{
+    display: flex;
+    align-items: center;
+    padding: 5% 2%;
+    justify-content: space-between;
+    gap: 82px;
+    width: 80%;
+}
+
+.encriptador__contenido{
+    display: flex;
+    align-items: center;
+    padding: 0% 10% ;
+    justify-content: space-between;
+    gap: 183px ;
+    width: 80%;
+}
+
+.encriptador__input{
+    color: var(--color-3); 
+    font-size: 3rem; 
+    font-style: var(--fuente-Inter);
+    display: flex;
+    align-items: flex-start;
+    width: 95%;
+    height: 150px;
+}
+
+.encriptador__mensaje{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.encriptador__imagen{
+    width: 5%;
+    margin-right: 10px;
+}
+
+.encriptador__frase{
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+}
+
+.encriptador__botones{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.encriptador__boton1{
+    width: 50%;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-4);
+    border: 2px solid var(--color-3);
+    background-color:var(--color-3);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.encriptador__boton2{
+    width: 50%;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-2);
+    border: 2px solid var(--color-3);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.encriptador__boton1:hover{
+    background-color: var(--color-hover);
+}
+
+.encriptador__boton2:hover{
+    background-color: var(--color-hover);
+}
+
+.texto__final{
+    text-align: center;
+    align-content: flex-start;
+    border-radius: 32px;
+    font-family: var(--fuente-Inter);
+    font-size: 2rem;
+    width: 50%;
+    height: 500px;
+    border: 2px;
+    background-color: var(--color-4);
+    box-sizing: border-box;
+    padding: 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto__final__p{
+    text-align: center;
+    align-content: flex-start;
+    border-radius: 32px;
+    font-family: var(--fuente-Inter);
+    font-size: 2rem;
+    width: 80%;
+    height: 500px;
+    border: 2px;
+    background-color: var(--color-4);
+    box-sizing: border-box;
+    padding: 4px 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto__final__imagen{
+    width: 80%;
+}
+
+.texto__final__mensaje1{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.texto__final__mensaje2{
+    font-size: 1rem;
+    padding: 16px;
+}
+
+.encriptador__boton3{
+    width: 80%;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-2);
+    border: 2px solid var(--color-3);
+    gap: 10px;
+}
+
+.encriptador__boton3:hover{
+    background-color: var(--color-hover);
+}
+
+.footer{
+    background-color: var(--color-3);
+    padding: 16px;
+    color: var(--color-1);
+    text-align: center;
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+@media (max-width: 1100px){
+    
+
+    .encriptador__contenido{
+        flex-direction: column;
+        width: auto;
+        padding: 5%;
+        
+    }
+
+    
+}
+
